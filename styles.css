@@ -12,12 +12,8 @@
 }
 
 body {
-
-  background-image:
-  linear-gradient(to bottom, rgba(100, 100, 100, 0.6), rgba(16, 16, 16, 0.2)),
-  url('img/sunset.jpg');
+  background-image:linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(16, 16, 16, 0.2)),url('img/cold.jpg');
   background-size: cover;
-  transition: background-color 1s ease;
   user-select: none;
   height: 100vh;
 }
@@ -25,7 +21,7 @@ nav p{
   font-family: 'Nerko One', cursive;
   font-size: 3rem;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   margin: 20px auto;
   color: white;
 }
@@ -67,7 +63,6 @@ progress::-webkit-progress-value {
 
 .mode-button {
   font-size: 16px;
-  /* height: 28px; */
   cursor: pointer;
   box-shadow: none;
   font-weight: bold;
@@ -96,7 +91,7 @@ progress::-webkit-progress-value {
   font-size: 22px;
   height: 55px;
   text-transform: uppercase;
-  color: hsl(175, 26%, 41%);
+  color: hsl(10, 26%, 41%);
   font-weight: bold;
   width: 200px;
   background-color: white;
@@ -120,6 +115,44 @@ button:focus, button:active {
 
 .hidden {
   display: none;
+}
+.container-bg{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0.4;
+  transition: 0.5s;
+}
+.container-bg:hover{
+  opacity: 1;
+}
+.back-frem{
+  width: 16rem;
+  height: 4rem;
+  background: white;
+  border-radius: 23px;
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.back-frem .back-chang{
+  width: 30px;
+  height: 30px;
+  background: wheat;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.back-frem .back-chang img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.back-frem .back-chang img:hover{
+  border: 2px solid brown;
 }
 
 @media screen and (max-width: 550px) {

@@ -7,12 +7,12 @@
     <title>Codedoro.me</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="/img/icons8-timer-64.png">
+    <link rel="icon" type="image/x-icon" href="/img/icons8-book-16.png">
   </head>
   <body>
     <section>
       <nav>
-          <p>Codedoro.me</p>
+          <p>focuscode.</p>
       </nav>
     <main class="app">
       <progress id="js-progress" value="0"></progress>
@@ -50,6 +50,18 @@
           Start
         </button>
       </div>
+
+    <!-- Changer Background -->
+    <div class="container-bg" >
+      <div class="back-frem">
+        <p>Change Wall</p>
+        <div class="back-chang" onclick="background1()"><img src="./img/cold.jpg" alt=""></div>
+        <div class="back-chang" onclick="background2()"><img src="./img/sun.jpg" alt=""></div>
+        <div class="back-chang" onclick="background3()"><img src="./img/sunset.jpg" alt=""></div>
+    </div>
+    </div>
+    <!-- Changer Background -->
+
     </main>
   </section>
   <div class="hidden">
@@ -59,5 +71,18 @@
 </div>
 
     <script src="index.js"></script>
+    <script>
+      // Ubah Background 
+    function background1() {
+      document.querySelector('body').style.background = "linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(16, 16, 16, 0.2)), url('./img/cold.jpg') center center / cover"
+
+    }
+    function background2() {
+      document.querySelector('body').style.background = "linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(16, 16, 16, 0.2)),url('./img/sun.jpg') center center / cover";
+    }
+    function background3() {
+      document.querySelector('body').style.background = "linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(16, 16, 16, 0.2)),url('./img/sunset.jpg') center center / cover";
+    }
+    </script>
   </body>
 </html>

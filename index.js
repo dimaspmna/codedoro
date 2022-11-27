@@ -61,7 +61,7 @@ function switchMode(mode) {
     sec.textContent = seconds;
 
     // menambahkan countdown di tab title
-    const text = timer.mode === 'pomodoro' ? 'Get back to work' : 'Take a break';
+    const text = timer.mode === 'pomodoro' ? 'Ayo Kembali Bekerja!' : 'Ambil Istirahat';
     document.title = `${minutes} :${seconds} - ${text}`;
 
     // menambahkan remaining bar 
@@ -133,7 +133,7 @@ function startTimer() {
       }
       document.querySelector(`[data-sound="${timer.mode}"]`).play();
       if(Notification.permission == 'granted'){
-        const text= timer.mode === 'pomodoro' ? 'Get back to work' : 'Take a break!';
+        const text= timer.mode === 'pomodoro' ? 'Kembalilah Fokus!' : 'Ambil Istirahat!';
         new Notification(text);
       }
       startTimer();
